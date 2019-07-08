@@ -8,8 +8,8 @@ let studentsScore = 9
 
 let gradeCalc = function (studentsScore, total = 20) {
     let percent = studentsScore / total * 100
-    :
-
+    let grade = ''
+    
     if (percent >= 90){
         grade='A'
     } else if (percent >= 80){
