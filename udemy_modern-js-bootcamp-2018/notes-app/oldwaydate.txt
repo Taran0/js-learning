@@ -1,0 +1,43 @@
+//unix epoch - January 1st 1970 00:00:00
+//+1s: 1000
+//-1min: -60000
+//most dátumként
+const now = new Date()
+//now változó unix epoch értéke
+const timestamp = now.getTime()
+//unix epoch convert to date (from local storage)
+const myDate = new Date(timestamp)
+
+console.log(myDate.getFullYear())
+
+
+// console.log(`Year: ${now.getFullYear()}`)
+// console.log(`Month: ${now.getMonth()}`)
+// console.log(`Day of the month: ${now.getDate()}`)
+// console.log(`Hour: ${now.getHours()}`)
+// console.log(`Minutes: ${now.getMinutes()}`)
+// console.log(`Seconds: ${now.getSeconds()}`)
+
+// 1. create two dates
+// 2. get timestamp for both
+// 3. which one comes first
+
+const dateOne = new Date('June 24 1987 12:41:00')
+const dateTwo = new Date('July 30 2019 17:30:00')
+
+const dateOneTimestamp = dateOne.getTime()
+const dateTwoTimestamp = dateTwo.getTime()
+
+const myDateOne = new Date(dateOneTimestamp)
+const myDateTwo = new Date(dateTwoTimestamp)
+
+
+if (dateOneTimestamp < dateTwoTimestamp) {
+    console.log(myDateOne)
+}else if(dateOneTimestamp > dateTwoTimestamp) {
+    console.log(myDateTwo)
+}
+
+
+
+
