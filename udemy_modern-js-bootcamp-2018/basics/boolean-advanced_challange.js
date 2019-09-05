@@ -10,4 +10,5 @@ if (temp < 32) {
     console.log('it is hot outside')
 } else {
     console.log('the weather is nice!')
-    }
+}
+
